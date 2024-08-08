@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录界面</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+<script src="./static/js/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="welcome">
+    <div class="pinkbox">
+      <!-- 注册 -->
+      <div class="signup nodisplay">
+        <h1>Register</h1>
+        <form autocomplete="off" action="/" method="post">
+          <input type="text" placeholder="Username" name='username'>
+          <input type="email" placeholder="Email" name='email'>
+          <input type="password" placeholder="Password" name='password'>
+          <input type="password" placeholder="Confirm Password">
+          <button class="button submit">Create Account</button>
+        </form>
+      </div>
+
+      <!-- 登录 -->
+      <div class="signin">
+        <h1>Sign In</h1>
+        <form class="more-padding" autocomplete="off" action="/index" method="post">
+          <input type="text" placeholder="Username" naem='username'>
+          <input type="password" placeholder="Password" name='password'>
+          <div class="checkbox">
+            <input type="checkbox" id="remember" /><label for="remember">Remember Me</label>
+          </div>
+          <button class="button sumbit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="leftbox">
+      <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+      <p class="desc">Pick your perfect <span>bouquet</span></p>
+      <img class="flower smaller" src="./static/images/hua1.jpg" />
+      <p class="account">Have an account?</p>
+      <button class="button" id="signin">Login</button>
+    </div>
+
+    <div class="rightbox">
+      <h2 class="title"><span>BLOOM</span>&<br>BOUQUET</h2>
+      <p class="desc">Pick your perfect <span>bouquet</span></p>
+      <img class="flower" src="./static/images/hua1.jpg" />
+      <p class="account">Don't have an account?</p>
+      <button class="button" id="signup">Sign Up</button>
+    </div>
+  </div>
+</div>   
+
+<!-- partial -->
+  <script src='./static/js/jquery.min.js'></script><script src="./static/js/script.js"></script>
+</body>
+</html>
